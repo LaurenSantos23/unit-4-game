@@ -4,36 +4,78 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1, shrink-to-fit=no"
-        name="viewport"><!-- Bootstrap CSS -->
+        name="viewport">
+  <title>Crystals Collector</title><!--Reset CSS Link-->
+  <link href="assets/css/reset.css"
+        rel="stylesheet"
+        type="text/css"><!--jQuery Link-->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script><!-- Bootstrap CSS -->
   <link crossorigin="anonymous"
-        href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-        rel="stylesheet">
-  <title>Crystals Collector</title>
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+        integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+        rel="stylesheet"><!--CSS Style Sheet Link-->
+  <link href="assets/css/style.css"
+        rel="stylesheet"
+        type="text/css">
 </head>
 <body>
-  <h1>Crystals Collector</h1><!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script crossorigin="anonymous"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script> 
-  <script crossorigin="anonymous"
-        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script> 
-  <script crossorigin="anonymous"
-        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-  <div class="container">
-    <!--(column 1)  Game rules in a big container with 5 paragraphs-->
+  <div class="jumbotron text-center">
+    <h1>Crystals Collector</h1>
   </div>
-  <div class="container">
-    <!-- (column 2 with two rows) number to guess box in first row and wins and losses in second row -->
-  </div>
-  <div class="container">
-    <!-- crystals need to be here, 4 images with their own class   -->
-  </div>
-  <div class="container">
-    <!-- score box here -->
-  </div>
+  <div class="container-fluid">
+    <div class="row-text-center">
+      <div class="col-sm-12 gamerules">
+        <h2>Game Rules</h2>
+        <p>You will be given a random number at the start of the game.</p>
+        <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+        <p>You win the game by matching your total score to the random number. You lose the game if your total score is greater than the random number.</p>
+        <p>The value of each crystal is hidden from you until you click on it.</p>
+        <p>Each time you start a new game, new values will be set for the 4 crystals and the random score to match.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-4">
+        <h2><b>Score to match:</b><span id="scoreToMatch"></span></h2>
+      </div>
+      <div class="row">
+        <div class="col-sm-4">
+          <h2><b>Your total score is:</b><span id="totalScore"></span></h2>
+        </div>
+        <div class="row">
+          <div class="col-sm-2">
+            <h2>Wins: <span id="wins"></span></h2>
+            <h2 class="text-left">Losses: <span id="losses"></span></h2>
+          </div>
+        </div>
+      </div>
+      <div class="row text-right">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-1"><img alt="Crystal-1"
+             class="img-thumbnail blue"
+             height="400px"
+             src="assets/images/crystal-1.jpg"
+             width="350px"></div>
+        <div class="col-sm-1"><img alt="Crystal-2"
+             class="img-thumbnail red"
+             height="400px"
+             src="assets/images/crystal-2.jpg"
+             width="400px"></div>
+        <div class="col-sm-1"><img alt="Crystal-3"
+             class="img-thumbnail yellow"
+             height="400px"
+             src="assets/images/crystal-3.jpg"
+             width="400px"></div>
+        <div class="col-sm-1"><img alt="Crystal-4"
+             class="img-thumbnail green"
+             height="400px"
+             src="assets/images/crystal-4.jpg"
+             width="400px"></div>
+        <div class="col-sm-4"></div>
+      </div>
+    </div>
+  </div><!-- javascript link-->
+  <script src="assets/javascript/game.js"></script>
 </body>
 </html>
