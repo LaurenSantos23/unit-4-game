@@ -1,5 +1,6 @@
-.body {
-    background-image: url("/../assets/images/crystal-background.jpg");
+.container-fluid {
+    background-image: url("../images/crystal-background.jpg");
+    background-size: 100% 100%;
     margin: 0px;
     padding: 0px;
 }
@@ -25,7 +26,7 @@
         display: inline-block;    
         max-width: 100%;
         height: auto;
-        padding: 4px;
+        margin-bottom: 100px;
         line-height: 1.42857143;
         background-color: rgb(12, 12, 12);
         border: 1px solid #ddd;
