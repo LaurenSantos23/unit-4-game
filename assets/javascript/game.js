@@ -2,6 +2,29 @@
 
 //Make four buttons with on click event 
 
+$(document).ready(function() {
+        $("#crystal-1").on("click", function(){
+            console.log("crystal-1")
+        })
+})
+
+$(document).ready(function() {
+    $("#crystal-2").on("click", function(){
+        console.log("crystal-2")
+    })
+})
+
+$(document).ready(function() {
+    $("#crystal-3").on("click", function(){
+        console.log("crystal-3")
+    })
+})
+
+$(document).ready(function() {
+    $("#crystal-4").on("click", function(){
+        console.log("crystal-4")
+    })
+})
 //player is shown random number at start of every game
 
 //make random number generator for number for 4 crystals and number for player to match
