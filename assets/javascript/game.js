@@ -2,41 +2,59 @@
 
 //Make four buttons with on click event ( working in console log! )
 $(document).ready(function() {
+    var random = Math.floor(Math.random() * 120) + 1;
+        console.log(random);
+        $("#scoreToMatch").append(random);
+
+    
+     var firstCrystalNum = Math.floor(Math.random() * 11) + 1;
+        console.log(random);
+        $("#Crystal-1").append(random);
+
+    var secondCrystalNum = Math.floor(Math.random() * 11) + 1;
+        console.log(random);
+        $("#Crystal-2").append(random);
+
+    var thirdCrystalNum = Math.floor(Math.random() * 11) + 1;
+        console.log(random);
+        $("#Crystal-3").append(random);
+        
+    var fourthCrystalNum = Math.floor(Math.random() * 11) + 1;
+        console.log(random);
+        $("#Crystal-4").append(random);
+
+
+
     $("#Crystal-1").on("click", function() {          
         console.log("Crystal-1")
-    })
-})    
+    });
 
-$(document).ready(function() {
     $("#Crystal-2").on("click", function() {          
         console.log("Crystal-2")
-    })
-})   
+    });
 
-$(document).ready(function() {
     $("#Crystal-3").on("click", function() {          
         console.log("Crystal-3")
-    })
-})  
+    });
 
-$(document).ready(function() {
     $("#Crystal-4").on("click", function() {          
         console.log("Crystal-4")
-    })
-})   
+    });
+
+
+})       
 
 //player is shown random number at start of every game (having trouble figuring out pathway for the prepend stuff, math stuff is prob wrong too)
 $(document).ready(function() {
     $("randomNum-button").on("click", function() {
         var NumToGuess = "";
         for (var i = 0; i < 120; i++) {
-        var random = Math.floor(Math.random() *120) + 1;
 
     NumToGuess = random + NumToGuess;
 
         
     }
-    $("randomNum-button").prepend(<h2></h2> + NumToGuess);
+    $("randomNum-button").prepend("<h2>NumToGuess</h2>");
 });
 
 });
@@ -54,5 +72,4 @@ $(document).ready(function() {
 
 //Keep random number shown to player between 19-120 and each crystal should have hidden value between 1-12
 
-
-
+1
