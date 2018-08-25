@@ -8,37 +8,39 @@ $(document).ready(function() {
 
 // Random numbers assigned to my crystal pictures// 
      var firstCrystalNum = Math.floor(Math.random() * 12 + 1);
-        console.log(random);
-        $("#Crystal-1").append(random);
+        
 
     var secondCrystalNum = Math.floor(Math.random() * 12 + 1);
-        console.log(random);
-        $("#Crystal-2").append(random);
+     
 
     var thirdCrystalNum = Math.floor(Math.random() * 12 + 1);
-        console.log(random);
-        $("#Crystal-3").append(random);
+       
 
     var fourthCrystalNum = Math.floor(Math.random() * 12 + 1);
-        console.log(random);
-        $("#Crystal-4").append(random);
+     
+
+    var userGuess = 0;  
 
 
 // on click event for my images of crystals//
-    $("#Crystal-1").on("click", function() {          
-        console.log("Crystal-1")
+    $("#Crystal-1").on("click", function() {  
+        userGuess += firstCrystalNum        
+        $("#totalScore").text(userGuess)
     });
 
     $("#Crystal-2").on("click", function() {          
-        console.log("Crystal-2")
+        userGuess += secondCrystalNum        
+        $("#totalScore").text(userGuess)
     });
 
     $("#Crystal-3").on("click", function() {          
-        console.log("Crystal-3")
+        userGuess += thirdCrystalNum        
+        $("#totalScore").text(userGuess) 
     });
 
     $("#Crystal-4").on("click", function() {          
-        console.log("Crystal-4")
+        userGuess += fourthCrystalNum        
+        $("#totalScore").text(userGuess)
     });
 
 
