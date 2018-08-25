@@ -62,8 +62,15 @@ $(document).ready(function() {
 });
 
 
-//add (win to win) or (loss to loss) if player matches/does not match random number from start of game
+//add (win to win) or (loss to loss) if player matches/does not match random number from start of game (I want to move the win or loss to the right div and add ++1 each time)
+ if (totalScore === scoreToMatch) {
+    
+ }
 
+ if (totalScore !=== scoreToMatch {
+
+
+ })
 
 // The game automatically restarts when player wins or loses
 
