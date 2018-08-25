@@ -1,33 +1,48 @@
 // Crystal Collector //
 
-//Make four buttons with on click event 
-
+//Make four buttons with on click event ( working in console log! )
 $(document).ready(function() {
-        $("#crystal-1").on("click", function(){
-            console.log("crystal-1")
-        })
-})
-
-$(document).ready(function() {
-    $("#crystal-2").on("click", function(){
-        console.log("crystal-2")
+    $("#Crystal-1").on("click", function() {          
+        console.log("Crystal-1")
     })
-})
+})    
 
 $(document).ready(function() {
-    $("#crystal-3").on("click", function(){
-        console.log("crystal-3")
+    $("#Crystal-2").on("click", function() {          
+        console.log("Crystal-2")
     })
-})
+})   
 
 $(document).ready(function() {
-    $("#crystal-4").on("click", function(){
-        console.log("crystal-4")
+    $("#Crystal-3").on("click", function() {          
+        console.log("Crystal-3")
     })
-})
-//player is shown random number at start of every game
+})  
+
+$(document).ready(function() {
+    $("#Crystal-4").on("click", function() {          
+        console.log("Crystal-4")
+    })
+})   
+
+//player is shown random number at start of every game (having trouble figuring out pathway for the prepend stuff, math stuff is prob wrong too)
+$(document).ready(function() {
+    $("randomNum-button").on("click", function() {
+        var NumToGuess = "";
+        for (var i = 0; i < 120; i++) {
+        var random = Math.floor(Math.random() *120) + 1;
+
+    NumToGuess = random + NumToGuess;
+
+        
+    }
+    $("randomNum-button").prepend(<h2></h2> + NumToGuess);
+});
+
+});
 
 //make random number generator for number for 4 crystals and number for player to match
+
 
 // on click, random number is added to players total score (ON CLICK UPDATE PLAYERS SCORE)
 
