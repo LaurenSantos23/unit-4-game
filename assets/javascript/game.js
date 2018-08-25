@@ -2,29 +2,29 @@
 
 //Make four buttons with on click event ( working in console log! )
 $(document).ready(function() {
-    var random = Math.floor(Math.random() * 120) + 1;
+    var random = Math.floor(Math.random() * (120-19+ 1) + 19);
         console.log(random);
         $("#scoreToMatch").append(random);
 
-    
-     var firstCrystalNum = Math.floor(Math.random() * 11) + 1;
+// Random numbers assigned to my crystal pictures// 
+     var firstCrystalNum = Math.floor(Math.random() * 12 + 1);
         console.log(random);
         $("#Crystal-1").append(random);
 
-    var secondCrystalNum = Math.floor(Math.random() * 11) + 1;
+    var secondCrystalNum = Math.floor(Math.random() * 12 + 1);
         console.log(random);
         $("#Crystal-2").append(random);
 
-    var thirdCrystalNum = Math.floor(Math.random() * 11) + 1;
+    var thirdCrystalNum = Math.floor(Math.random() * 12 + 1);
         console.log(random);
         $("#Crystal-3").append(random);
-        
-    var fourthCrystalNum = Math.floor(Math.random() * 11) + 1;
+
+    var fourthCrystalNum = Math.floor(Math.random() * 12 + 1);
         console.log(random);
         $("#Crystal-4").append(random);
 
 
-
+// on click event for my images of crystals//
     $("#Crystal-1").on("click", function() {          
         console.log("Crystal-1")
     });
@@ -72,4 +72,3 @@ $(document).ready(function() {
 
 //Keep random number shown to player between 19-120 and each crystal should have hidden value between 1-12
 
-1
