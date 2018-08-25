@@ -47,7 +47,7 @@ $(document).ready(function() {
         wins++;
         $("#wins").text(wins)
         resetGame();
-
+        
      }
       
       //check if you lost
